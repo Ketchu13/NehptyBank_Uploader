@@ -8,7 +8,7 @@ Public Class NBCUploader
     Private isMouseDown As Boolean = False
     Private mouseOffset As Point
     Private file_content As String
-    Private server_ip As String = "91.164.99.220:8888"
+    Private server_ip As String = "ip:port"
 
 #Region "Drag and Move form"
     ' Left mouse button pressed
@@ -94,6 +94,10 @@ Public Class NBCUploader
         Else
             Button3.Enabled = False
         End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        About.ShowDialog(Me)
     End Sub
 #End Region
 

@@ -73,9 +73,29 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property rabbit1_exe() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("rabbit1_exe", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property rabbit21() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("rabbit21", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property rabbit3() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("rabbit3", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
